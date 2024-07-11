@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section {
+    font-family: "Montserrat", sans-serif;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: skyblue;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.lab {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.upper-section>.welcome {
+    padding-left: 20%;
+}
+
+.cards {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.info {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.info>ul {
+    list-style-type: none;
+}
+
+.info>ul>li {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.info>p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.info>h2 {
+    color: skyblue;
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+    margin-bottom: 0 !important; /* Добавляем !important для переопределения других стилей, если они есть */
+    padding-bottom: 0;
+}
+
+footer>p {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 700px) {
+    .upper-section {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+
+    .lab {
+        margin-left: 0;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 800px) {
+    .cards {
+        display: block;
+    }
+}
+
